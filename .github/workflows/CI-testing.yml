@@ -4,7 +4,7 @@ name: CI and Testing
 #Trigger to run the workflow
 on:
   push:
-    branches: [master, main, **]
+    branches: master
   pull_request:
     branches: master
 
@@ -33,4 +33,3 @@ jobs:
       #step-4: Run the unit and integration tests
       - name: Run Tests
         run: npm test
-
